@@ -1,136 +1,41 @@
- <!DOCTYPE html>
-<html lang="pt">
-<head>   
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="DC.language" content="en">    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<link rel="stylesheet" type="text/css" href="style_2.css" />
-    
-<title>Baldio de Ansiães</title>
-    
-<style>
-                    
-</style>
-    
-    
-    
-    </head>
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+      
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
 
-<body>
-
-<div id="page">
+    <!-- Don't use this in production: -->  
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      
+  </head>
     
-	<div class="inner">
-        
-		<div class="mast">
-			<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Baldio de Ansiães"></a></h1>
-
-			<ul class="nav">
-				<li class="first"><a href="#">Home</a></li>
-                <li class="second"><a href="#">About</a></li>
-                <li class="third"><a href="#">News</a></li>
-                <li class="fourth"><a href="#">Contact</a></li>
-				
-			</ul><!-- /end .nav -->
-            
-		</div><!-- /end .mast -->
-        
-         <div class="info">
-        <div class="date"> 
-            <img src="images/icondatetime.png" alt="ícone data e hora">
-            <p id="date"></p>
-            <p id="time"></p> 
-         </div>
-        <div id="weather" class="weather">
-            
-            <p>metereologia</p>
-          
-        </div>
-        </div>
-
-		<div class="section intro">
-			<div>
-				<h2>Bem-vindo ao Baldio de Ansiães!</h2>
-
-				<p> Nós somos uma comunidade que se dedica à preservação do nosso ambiente natural e património cultural. Acreditamos que é possível criar um futuro sustentável e justo para todos, e o nosso lema<b> <em>"Um baldio da comunidade para a comunidade"</em></b> é a expressão dessa crença.</p>
-
-                <p>O Baldio de Ansiães é um espaço único, onde a natureza e a cultura se fundem para criar um património de valor incalculável. Aqui, encontrará paisagens deslumbrantes, ricas em biodiversidade, e também património que testemunham a nossa história e a nossa cultura.</p>
-
-                <p>A nossa comunidade trabalha para proteger e preservar este património, e para garantir que ele seja transmitido às gerações futuras. Valorizamos o conhecimento e as tradições dos nossos antepassados, e procuramos integrá-los no nosso dia-a-dia, para construir um futuro sustentável e equitativo.</p>
-
-                <p>No Baldio de Ansiães, todos são bem-vindos para se juntarem a nós nesta missão. Seja para participar nas atividades de preservação do ambiente, para aprender mais sobre a nossa cultura e história, ou simplesmente para desfrutar da beleza natural deste lugar, temos certeza de que encontrará algo que o fará sentir-se em casa.</p>
-
-                <p>Junte-se a nós no Baldio de Ansiães, e ajude-nos a construir um futuro melhor para todos, assente em valores ambientais, culturais e patrimoniais.</p>
-			</div>
-		</div><!-- /end .section.intro -->
-
-		<div class="section main">
-			<h2>Floresta &amp; Comunidade</h2>
-			<ol>
-				<li id="serra_1" class="figure">
-					<a href="#">
-						<img src="images/serra_1.jpg" alt="">
-						<span class="figcaption">serra_1</span>
-					</a>
-				</li><!-- /end .figure -->
-				<li id="serra_4" class="figure">
-					<a href="#">
-						<img src="images/serra_4.jpg" alt="">
-						<span class="figcaption">serra_4</span>
-					</a>
-				</li><!-- /end .figure -->
-				<li id="serra_7" class="figure">
-					<a href="#">
-						<img src="images/serra_7.jpg" alt="">
-						<span class="figcaption">serra_7</span>
-					</a>
-				</li><!-- /end .figure -->
-				<li id="lameira" class="figure">
-					<a href="#">
-						<img src="images/lameira.jpg" alt="">
-						<span class="figcaption">lameira</span>
-					</a>
-				</li><!-- /end .figure -->
-				<li id="pr4-1" class="figure">
-					<a href="#">
-						<img src="images/pr4-1.jpg" alt="">
-						<span class="figcaption">pr4-1</span>
-					</a>
-				</li><!-- /end .figure -->
-				<li id="serra_5" class="figure">
-					<a href="#">
-						<img src="images/serra_5.jpg" alt="">			
-                        <span class="figcaption">serra_5</span>
-					</a>
-				</li><!-- /end .figure -->
-			</ol>
-		</div><!-- /end .section.main -->
-        
-	</div><!-- /end .inner --> 
+  <body>
+      
+    <div id="root"></div>
+    <script type="text/babel">
     
-	<div class="footer">
-        
-        <ul>
-            <li>
-                <a href="" alt="social">social</a>
-            </li>
-            <li>
-                <a href="form.html" alt="subscrever">subscrever</a>
-            </li>
-            <li>
-                <a href="" alt="privacidade">politica de privacidade</a>
-            </li>
-        </ul>  
-                  
-           <p>copyright</p>          
-                
-	</div><!-- /end .footer -->
-    
-</div><!-- /end #page -->
-    
-    <script src="datetime.js"></script>
-    <script src="ansiaesweather.js"></script>
-    
-</body>
+      function MyApp() {
+        return <h1>Hello, world!</h1>;
+      }
+
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+
+    </script> 
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this page for starting a new React project with JSX:
+      https://react.dev/learn/start-a-new-react-project
+
+      Read this page for adding React with JSX to an existing project:
+      https://react.dev/learn/add-react-to-an-existing-project
+    -->
+  </body>
 </html>
